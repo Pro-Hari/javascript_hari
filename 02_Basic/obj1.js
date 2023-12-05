@@ -32,10 +32,20 @@ const obj3 = {...tinderUser,...reg} //using spread Operator
 
 console.log(obj3)
 
-console.log(Object.keys(tinderUser))
-console.log(Object.values(tinderUser));
+// console.log(Object.keys(tinderUser))
+// console.log(Object.values(tinderUser));
 
-console.log(Object.entries(tinderUser))
+// console.log(Object.entries(tinderUser))
 
-console.log(tinderUser.hasOwnProperty('id'))
+// console.log(tinderUser.hasOwnProperty('id'))
+
+const course= {
+    coursename: "JS User",
+    price:"6564",
+    courseInstr:"Harsh"
+}
+
+const {courseInstr:Instr}  = course // de-structure of object 
+
+console.log(Instr)
 
