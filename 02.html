@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color:white">
+    
+</body>
+<script>  
+// creating a div element using script  
+    const dd = document.createElement('div')
+    console.log(dd)
+
+    dd.className = 'main'
+    dd.id = 'myId'
+    dd.setAttribute("title","generate title")
+    dd.style.backgroundColor ='red'
+    dd.style.padding = '10px'
+
+    // dd.innerHTML  = "Hello World!"
+    const text = document.createTextNode("Hello World!")
+    dd.appendChild(text)
+
+    document.body.appendChild(dd)
+</script>
+</html>

@@ -12,16 +12,46 @@
     </style>
 </head>
 <body  class="bg-black">
-    <div>
-        <h1 id="title" class="head">DOM Learning Hello World! <span style="display: none;"> hii</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class= "parent">
+        <!-- heelo -->
+       <div class = "day"> Monday</div>
+       <div class = "day"> Tuesday</div>
+       <div class = "day"> Wednesday </div>
+       <div class = "day"> Thursday</div>
     </div>
-    <input type="password">
+    <!-- <input type="password">
     <ul>
         <li class = "class-list">Hello</li>
         <li class = "class-list">HEll</li>
         <li class = "class-list">BYE</li>
-    </ul>
+    </ul> -->
     
 </body>
+<script>
+    const gf = document.querySelector('.parent')
+    // console.log(gf)
+
+    // console.log(gf.children) //it gives html collection
+    
+    // console.log(gf.children[2].innerHTML) // Wednesday
+
+    for(let i=0;i<gf.children.length;i++){
+        // console.log(gf.children[i].innerHTML)
+    }
+
+    // gf.children[1].style.color = 'red'
+    // console.log(gf.firstElementChild) // it print monday child
+    // console.log(gf.lastElementChild) // it print the last element
+    
+
+    const bf = document.querySelector('.day')
+
+    // console.log(bf) // it print the monday element
+    // console.log(bf.parentElement) 
+
+    // console.log(bf.nextElementSibling) // it prints tuesday
+
+    console.log('Nodes: ' , gf.childNodes)
+</script>
+
 </html>
