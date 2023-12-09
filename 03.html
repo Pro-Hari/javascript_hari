@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a function</title>
+</head>
+<body>
+    <ul class="lan"> 
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    // function addlan(language){
+    //     const li = document.createElement('li')
+    //     li.innerHTML = `${language}`
+    //     document.querySelector('.lan').appendChild(li)
+        
+    // }
+    //or
+    //it is more optimize approach
+    function addlan(language){
+        const ll = document.createElement('li')
+        const text = document.createTextNode(`${language}`)
+        ll.appendChild(text)
+        //or
+        // ll.appendChild(document.createTextNode(language))
+        document.querySelector('.lan').appendChild(ll)
+        // const tet = document.createElement('li')
+        // tet.textContent = `${language}`
+        // document.querySelector('.lan').appendChild(tet)
+
+       
+    }
+    addlan("Java")
+    addlan("Python")
+
+    //Edit
+    const ler = document.querySelector('li:nth-child(2)')
+    // ler.innerHTML = "Hii"
+
+    const tet = document.createElement('li')
+    tet.textContent = "mmm"
+    ler.replaceWith(tet)
+    //or
+
+    //const firstchild =  document.querySelector('li:first-child')
+    //firstchild.outerHTML = '<li>TypeScript</li>'
+
+    //remove
+
+    const lastlag = document.querySelector('li:last-child')
+    lastlag.remove()
+
+</script>
+</html>
